@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Ubuntu Insights</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>  
+    #banner {
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+     }
+     .row::after {
+        content: "";
+        clear: both;
+        display: table;
+     }
+
+    .custom-heading {
+        color: #00308F;
+    }
+  </style>
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <img class = "img-fluid" id = "banner" src="/static/service.jpg", height ="320" >
+    <div class = "container">
+      <h1 class= "text-center mt-2 mb-4 custom-heading"> Our Services</h1>
+      
+
+      <div class="row ">
+         <div class="column text-center">
+             <img src="/static/data_strategy.JPG", height = "50">
+            <h2 class= "text-center mt-2 mb-4 custom-heading"> Data-driven Strategy Development</h2>
+            <p>Our business consultancy specializes in crafting data-driven strategies tailored to your specific objectives. From market analysis to customer segmentation, we leverage data science techniques to provide insights that drive strategic decision-making.
+
+      </p>
+         </div>
+
+
+        <div class="column text-center">
+          <img src="/static/data_visualization.JPG", height = "50">
+            <h2 class= "text-center mt-2 mb-4 custom-heading">Data Visualization and Reporting</h2>
+            <p> Transform complex data sets into actionable insights with our data visualization and reporting services. We design intuitive dashboards and reports that enable you to understand key metrics at a glance, facilitating informed decision-making and driving business growth.
+        </p>
+         </div>
+         
+         <div class="column text-center">
+            <img src="/static/predictive.JPG", height = "50">
+            <h2 class= "text-center mt-2 mb-4 custom-heading">Predictive Analytics and Forecasting</h2>
+            <p> Gain a competitive edge by harnessing the power of predictive analytics and forecasting. Our experts utilize advanced algorithms and machine learning models to anticipate future trends, identify potential risks, and optimize resource allocation for your business.</p>
+         </div>
+
+        
+
+        <div class="column text-center">
+            <img src="/static/ai.JPG", height = "50">
+           <h2 class= "text-center mt-2 mb-4 custom-heading">AI-powered Solutions and Automation</h2>
+            <p>Streamline your operations and enhance efficiency with our AI-powered solutions and automation services. From implementing chatbots for customer support to optimizing supply chain management, we leverage cutting-edge technologies to automate repetitive tasks and unlock new opportunities for your business.
+</p>
+         </div>
+
+      
+  </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
