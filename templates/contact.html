@@ -45,11 +45,18 @@
         .calendly-button:hover {
             background-color: #002267;
         }
+
+      /* Style for rectangle box */
+      .rectangle-box {
+          height: 260px; /* Same as banner height */
+          width: 100%;
+          background-color: #00308f; /* Color of the rectangle box */
+      }
     </style>
 </head>
 <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id="banner" src="/static/contact.jpg" height="320">
+  <div class="rectangle-box"></div>
     <div class="container mt-5 mb-4">
         <h1 class="text-center mt-2 mb-4 custom-heading">Connect with a seasoned expert now!</h1>
       

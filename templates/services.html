@@ -29,11 +29,18 @@
     .custom-heading {
         color: #00308F;
     }
+
+    /* Style for rectangle box */
+    .rectangle-box {
+        height: 260px; /* Same as banner height */
+        width: 100%;
+        background-color: #00308f; /* Color of the rectangle box */
+    }
   </style>
   </head>
   <body>
     {% include 'nav.html' %}
-    <img class = "img-fluid" id = "banner" src="/static/service.jpg", height ="320" >
+    <div class="rectangle-box"></div>
     <div class = "container">
       <h1 class= "text-center mt-2 mb-4 custom-heading"> Our Services</h1>
       
@@ -41,7 +48,7 @@
       <div class="row ">
          <div class="column text-center">
              <img src="/static/data_strategy.JPG", height = "50">
-            <h2 class= "text-center mt-2 mb-4 custom-heading"> Data-driven Strategy Development</h2>
+            <h4 class= "text-center mt-2 mb-4 custom-heading"> Data-driven Strategy Development</h4>
             <p>Our business consultancy team specializes in crafting data-driven strategies tailored to your specific objectives. From market analysis to customer segmentation, we leverage data science techniques to provide insights that drive strategic decision-making.
 
       </p>
@@ -50,14 +57,14 @@
 
         <div class="column text-center">
           <img src="/static/data_visualization.JPG", height = "50">
-            <h2 class= "text-center mt-2 mb-4 custom-heading">Data Visualization and Reporting</h2>
+            <h4 class= "text-center mt-2 mb-4 custom-heading">Data Visualization and Reporting</h4>
             <p> Transform complex data sets into actionable insights with our data visualization and reporting services. We design intuitive dashboards and reports that enable you to understand key metrics at a glance, facilitating informed decision-making and driving business growth.
         </p>
          </div>
          
          <div class="column text-center">
             <img src="/static/predictive.JPG", height = "50">
-            <h2 class= "text-center mt-2 mb-4 custom-heading">Integrated Predictive and Prescriptive Analytics</h2>
+            <h4 class= "text-center mt-2 mb-4 custom-heading">Integrated Predictive and Prescriptive Analytics</h4>
             <p> Gain competitive edge by harnessing the power of proactive decision making through leveraging predictive and prescriptive analytics</p>
          </div>
 
@@ -65,7 +72,7 @@
 
         <div class="column text-center">
             <img src="/static/ai.JPG", height = "50">
-           <h2 class= "text-center mt-2 mb-4 custom-heading">AI-powered Solutions and Automation</h2>
+           <h4 class= "text-center mt-2 mb-4 custom-heading">AI-powered Solutions and Automation</h4>
             <p>Streamline your operations and enhance efficiency with our AI-powered solutions and automation services. From implementing chatbots for customer support to optimizing supply chain management, we leverage cutting-edge technologies to automate repetitive tasks and unlock new opportunities for your business.
 </p>
          </div>
